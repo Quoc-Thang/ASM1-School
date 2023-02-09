@@ -1,0 +1,67 @@
+$primary-color: #e66465
+$second-color: #9198e5
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background: linear-gradient(45deg, $primary-color, $second-color)!important
+    height: 100vh
+    width: 100vw
+    overflow-x: hidden
+
+.Login-form
+    background-color: #fff
+    margin: 200px auto
+    max-width: calc( 100vh - 40px * 2 )
+    border-radius: 12px
+    .header-form
+        padding: 20px 0
+        border-bottom: 1px solid #cdcd
+        .title
+            font-size: 18px
+            font-weight: bold
+            text-align: center
+    .form
+        padding: 20px
+        label[for=username], label[for=password]
+            width: auto
+            margin-bottom: 10px
+            font-size: 14px
+            opacity: .9
+            position: relative
+            background: #fff
+            padding: 0 5px
+            z-index: 1
+        input[type=text], input[type=password]
+            width: 100%
+            border-radius: 10px
+            outline: none
+            padding: 6px 10px
+            border: 1px solid #bbb
+            transform: translate(-10px, -20px)
+            font-size: 12px
+        input[type=submit]
+            margin: 0 auto;
+            display: flex;
+            background-image: linear-gradient(45deg, $primary-color, $second-color)!important
+            color: #fff
+            border: 0
+            padding: 4px 10px
+            border-radius: 6px
+            transition: 1s
+            &:hover
+                transform: scale(0.9)
+    .footer-form
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        padding-bottom: 20px
+        p
+            margin-bottom: 0
+        a
+            text-decoration: none
+            &:hover
+                color: #bcbc

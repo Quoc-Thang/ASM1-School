@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Loading Page</title>
+    <style>
+        /* CSS styles for the loading page */
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .loading h1 {
+            font-size: 40px;
+            color: #333;
+        }
+        
+        .loading .progress {
+            width: 200px;
+            height: 20px;
+            border: 1px solid #333;
+            position: relative;
+            margin: 50px auto;
+        }
+        
+        .loading .progress-bar {
+            background-color: #333;
+            height: 100%;
+            width: 0%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading">
+        <h1>Loading...</h1>
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+    <script>
+        var loaded = false;
+
+        if (!loaded) {
+
+            /* JavaScript code to update the progress bar */
+            var progressBar = document.querySelector(".progress-bar");
+            var interval = setInterval(function() {
+                var width = progressBar.offsetWidth + 10;
+                progressBar.style.width = width + "px";
+                if (width >= 200) {
+                    clearInterval(interval);
+                    window.location.href = "index.html";
+                }
+            }, 100); // 100 milliseconds = 0.1 seconds
+            loaded = true;
+        }
+    </script>
+</body>
+
+</html>

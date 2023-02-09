@@ -1,0 +1,620 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: none;
+    text-shadow: 0 0 5px #000!important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1C82AD;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00337C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #13005A;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* background-image: url(/Lab7/img/bg-body.jpg); */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.bg-menu {
+    display: block;
+}
+
+.bg-menu,
+.mobile-menu {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    box-shadow: 0 0 5px #000;
+    justify-content: center;
+}
+
+.bg-menu .row,
+.mobile-menu .row {
+    align-items: center;
+}
+
+.logo-menu-mobile {
+    width: 100%;
+    text-align: right;
+}
+
+.logo-menu-mobile img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-icon ul {
+    float: right;
+}
+
+.menu ul {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu a {
+    padding: 10px 15px;
+    display: block;
+    color: #000;
+}
+
+.bg-menu a img,
+.mobile-menu a img {
+    padding: 5px 0;
+}
+
+.mobile {
+    display: none;
+}
+
+.top-menu a {
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.top-menu a:after {
+    content: "";
+    width: 0;
+    transition: all ease-in-out 0.4s;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    position: absolute;
+}
+
+.top-menu a:hover:after {
+    width: 100%;
+}
+
+#main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    overflow-x: hidden;
+    z-index: 99;
+    overflow-y: auto;
+}
+
+#main-menu a {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#main-menu ul {
+    padding: 0;
+}
+
+#main-menu ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.title-menu {
+    background-color: #253237;
+    padding: 15px 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.title-menu p {
+    margin: 0;
+}
+
+.title-menu p a {
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bg-banner {
+    width: 100%;
+    height: auto;
+}
+
+.bg-banner img {
+    width: 100%;
+}
+
+.album {
+    width: 100%;
+    height: auto;
+}
+
+.album img {
+    width: 100%;
+}
+
+.album img:hover {
+    cursor: pointer;
+}
+
+.grid-container {
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.tab {
+    overflow: hidden;
+}
+
+.new-arrived {
+    padding: 5% 0!important;
+    margin-top: 10px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.new-arrived h1,
+.best4season h1,
+.weekly-recommend h1,
+.news h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.new-arrived .menu ul {
+    justify-content: center;
+}
+
+.new-arrived .menu button {
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    outline: none;
+    background-color: initial;
+    padding: 10px 20px;
+    border: none;
+    transition: 0.4s;
+    margin: 0 5px;
+}
+
+.new-arrived .menu button::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #c1272d;
+    border-radius: 50px;
+    opacity: 0;
+    transition: all ease-in-out .4s;
+}
+
+.new-arrived .menu button:hover::before {
+    opacity: 1;
+}
+
+.new-arrived .menu button::after {
+    content: "";
+    width: 0;
+    transition: all ease-in-out 0.4s;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    position: absolute;
+}
+
+.new-arrived .menu button:hover::after {
+    width: 100%;
+}
+
+.active:before {
+    opacity: 1!important;
+}
+
+.active:after {
+    width: 100%!important;
+}
+
+.tab-content {
+    width: 100%;
+    height: auto;
+    animation: fadeEffect 0.4s;
+    display: none;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.list-product {
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.card {
+    padding: 20px 10px;
+    min-height: 175px!important;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.card img {
+    display: block;
+    transition: all ease-in-out 0.4s;
+    padding: 20px 25px;
+    width: 100%;
+}
+
+.card:hover img {
+    transform: scale(1.3);
+    transition: all ease-in-out 0.4s;
+}
+
+.card-body {
+    margin: 10px 0;
+}
+
+.card-title a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text p {
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: -2px;
+}
+
+.card-subtitle p {
+    margin-bottom: 0;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.best4season {
+    background-color: #adbabf;
+    padding: 5% 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.weekly-recommend .title,
+.best4season .title,
+.news .title {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.list-product-best {
+    padding: 0!important;
+}
+
+.weekly-recommend {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.weekly-recommend .menu a {
+    position: relative;
+    padding: 10px 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.weekly-recommend .menu a::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #c1272d;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.weekly-recommend .menu a::after {
+    content: "";
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    position: absolute;
+}
+
+
+/* overlay */
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 1;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    animation: fadeEffect 1s;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    top: 50%;
+    /* Place the button at the bottom of the page */
+    right: 5px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 2px solid #fff;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #adbabf;
+    /* Set a background color */
+    color: #fff;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 8px 12px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 12px;
+    /* Increase font size */
+    animation: fadeEffectScroll 1.5s;
+    opacity: 0.75;
+}
+
+@keyframes fadeEffectScroll {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.75;
+    }
+}
+
+.news {
+    padding: 5% 0;
+}
+
+.news-img img {
+    width: 100%;
+}
+
+.news-title a {
+    color: #000;
+    display: inline;
+}
+
+.news-title a:hover {
+    color: #908c8c;
+}
+
+.news-title p {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+footer {
+    background-color: #f7f7f7;
+}
+
+footer .t-footer {
+    padding: 5% 0;
+    border-bottom: 1px solid #bbb;
+}
+
+footer .t-footer .title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer .t-footer .describe {
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+footer .b-footer {
+    padding: 3% 0 5% 0;
+}
+
+footer .b-footer .copyright {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Smart phone nhỏ */
+
+@media screen and (min-width: 240px) {
+    .bg-menu {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0;
+        padding: 0;
+    }
+}
+
+
+/* Iphone(480 x 640) */
+
+@media screen and (min-width: 320px) {
+    .bg-menu {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0;
+        padding: 0;
+    }
+}
+
+
+/* Tablet nhỏ(480 x 640) */
+
+@media screen and (min-width: 480px) {
+    .bg-menu {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0;
+        padding: 0;
+    }
+}
+
+
+/* Ipad dọc(768 x 1024) */
+
+@media screen and (min-width: 768px) {
+    .bg-menu {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0;
+        padding: 0;
+    }
+}
+
+
+/* Ipad ngang(1024 x 768) */
+
+@media screen and (min-width: 1024px) {
+    .bg-menu {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+
+/* http://t0457.store.nhanh.vn/ */

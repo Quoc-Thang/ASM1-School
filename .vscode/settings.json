@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "chatgpt.gpt3.apiKey": "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",
+    "chatgpt.apiKey": "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",
+    "chatgpt.timeoutLength": 999999,
+    "editor.guides.bracketPairs": true
+}
