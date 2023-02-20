@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nước hoa nữ</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="https://traffic-edge30.cdn.vncdn.io/cdn-pos/518fda-134540/store/20221011_9Fp297M3WNHRgDphFBIDVhss.png" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nuochoanu.css">
+
+    <!--Javascript-->
+    <script src="./js/javascript.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/3e006365dd.js" crossorigin="anonymous"></script>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Phần đầu trang-->
+    <header>
+
+        <!--Menu Desktop-->
+        <div class="bg-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="index.html">
+                            <img src="./img/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="col-8">
+                        <nav class="menu top-menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Nuochoanu.html">
+                                        Nước hoa nữ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Nước hoa nam
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="LogIn.html">
+                                        Đăng nhập
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-2">
+                        <nav class="menu menu-icon">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Navigation Menu -->
+        <div id="main-menu">
+            <div class="title-menu">
+                <p>
+                    Menu
+                    <a href="javascript:void(0)" onclick="closeMenu()">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </p>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="Nuochoanu.html">
+                        Nước hoa Nữ
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Nước hoa Nam
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Tin tức
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        Liên hệ
+                    </a>
+                </li>
+                <li>
+                    <a href="LogIn.html">
+                        Đăng nhập
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Mobile Menu-->
+        <div class="mobile">
+            <div id="overlay" onclick="closeMenu()"></div>
+            <div class="mobile-menu">
+                <div class="container">
+                    <div class="row row-cols-3">
+                        <div class="col-2">
+                            <div class="menu">
+                                <a href="javascript:void(0)" onclick="openMenu()">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6 logo-menu-mobile">
+                            <a href="index.html">
+                                <img src="./img/Logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <nav class="menu menu-icon">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!--Phần danh mục sản phẩm-->
+            <div class="col-2">
+                <aside>
+                    <div class="title-product">
+                        <h1>
+                            Nước hoa nữ
+                        </h1>
+                        <h2>
+                            <a href="Nuochoanu.html">
+                                Nước hoa nữ
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="selct-range-product">
+                        <div class="category">
+                            <ul class="title-list">
+                                <li>
+                                    Mức giá
+                                    <ul>
+                                        <li>
+                                            <label for="price-product">
+                                                <input type="checkbox" name="price-product" id="price-product">
+                                                <span>
+                                                    Dưới 100k
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="price-product">
+                                                <input type="checkbox" name="price-product" id="price-product">
+                                                <span>
+                                                    100k - 300k
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="price-product">
+                                                <input type="checkbox" name="price-product" id="price-product">
+                                                <span>
+                                                    300k - 500k
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="price-product">
+                                                <input type="checkbox" name="price-product" id="price-product">
+                                                <span>
+                                                    Trên 500k
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Dung tích
+                                    <ul>
+                                        <li>
+                                            <label for="size-product">
+                                                <input type="checkbox" name="size-product" id="size-product">
+                                                <span>
+                                                    30ml
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="size-product">
+                                                <input type="checkbox" name="size-product" id="size-product">
+                                                <span>
+                                                    50ml
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="size-product">
+                                                <input type="checkbox" name="size-product" id="size-product">
+                                                <span>
+                                                    Fullsize
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            </aside>
+            <!--Phần sản phẩm-->
+            <div class="col-10">
+                <article>
+                    <section>
+                        <div class="row align-items-start">
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="card-img-top">
+                                        <a href="chitietsanpham.html">
+                                            <img src="./img/Nu1.jpg" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="chitietsanpham.html">
+                                            Creed Aventus For Her
+                                        </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                7.000.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="card-img-top">
+                                        <a href="#">
+                                            <img src="./img/Nu2.jpg" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                            Orto Parisi Seminalis
+                                        </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                5.300.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="img-product">
+                                        <a href="#">
+                                            <img src="./img/Nu3.png" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                            Nasomatto Narcotic V
+                                        </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                3.500.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="img-product">
+                                        <a href="#">
+                                            <img src="./img/Nu4.jpg" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                        Tom Ford White Suede
+                                    </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                5.650.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="card-img-top">
+                                        <a href="#">
+                                            <img src="./img/Nu1.jpg" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                            Creed Aventus For Her
+                                        </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                7.000.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="card-img-top">
+                                        <a href="#">
+                                            <img src="./img/Nu2.jpg" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                            Orto Parisi Seminalis
+                                        </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                5.300.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="img-product">
+                                        <a href="#">
+                                            <img src="./img/Nu3.png" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                            Nasomatto Narcotic V
+                                        </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                3.500.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="card">
+                                    <div class="img-product">
+                                        <a href="#">
+                                            <img src="./img/Nu4.jpg" alt="Hình ảnh sản phẩm">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <a href="#">
+                                        Tom Ford White Suede
+                                    </a>
+                                        </div>
+                                        <div class="card-text">
+                                            <p>
+                                                5.650.000đ
+                                            </p>
+                                        </div>
+                                        <div class="card-subtitle">
+                                            <p>
+                                                +5 màu sắc
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!--Phần kết trang-->
+    <footer>
+        <div class="container">
+            <div class="t-footer">
+                <div class="row row-cols-4">
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <h2 class="title">
+                            NHANH FRAGRANCE
+                        </h2>
+                        <p class="describe">
+                            Nhanh Fragrance là một tiệm nước hoa nho nhỏ bắt nguồn từ đam mê về mùi hương cũng như việc mong muốn chia sẻ với tất cả các bạn về sở thích của tụi mình, đồng thời tạo ra một nơi giúp mọi người dễ dàng sở hữu bất cứ chai nước hoa nào bạn muốn. và rồi
+                            cứ thế, với mục tiêu lan toả hương thơm và niềm đam mê mà Nhanh Fragrance lớn lên và được tin tưởng hơn mỗi ngày
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <h2 class="title">
+                            CHI NHÁNH HÀ NỘI
+                        </h2>
+                        <p class="describe">
+                            Tầng 3, Hà Thành Plaza, 102 Thái Thịnh, Phường Trung Liệt, Quận Đống Đa, Hà Nội
+                        </p>
+                        <h2 class="title">
+                            CHI NHÁNH TP. HỒ CHÍ MINH
+                        </h2>
+                        <p class="describe">
+                            Tầng 3, Số 70 Lữ Gia, Phường 15, Quận 11, Thành phố Hồ Chí Minh
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <h2 class="title">
+                            LIÊN HỆ
+                        </h2>
+                        <p class="describe">
+                            Hotline: 1900.2812
+                        </p>
+                        <p class="describe">
+                            Email: contact@nhanh.vn
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-3">
+                        <h2 class="title">
+                            SOCIAL
+                        </h2>
+                        <div class="social-links">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-footer">
+                <h2 class="copyright">
+                    Copyright &#169; by Nhanh Fragrance Company
+                </h2>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button onclick='topFunction()' id="myBtn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+</body>
+
+</html>
